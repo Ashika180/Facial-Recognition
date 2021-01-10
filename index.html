@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title> Facial Recognition </title>
+
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Hanalei+Fill&family=Langar&family=Lobster&family=Redressed&family=Staatliches&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <center>
+            <div class= "container">
+<h1 id= "heading"> Facial Recognition </h1>
+
+<h3 id="main"><b><u> Model is trained to   identify the following people. </u></b></h3>
+
+<br>
+<div id="names">
+    <b>
+        KP
+        <hr>
+        Supriya
+        <hr>
+        Ashika
+        <hr>
+        Aishwarya
+        <hr>
+    </b>
+</div>
+
+<br>
+<div class= "image-section">
+    <div class= "first-image">
+       <label class="para"> Webcam View - </label>
+       <div id= "camera"></div>
+       </div>
+
+       <div class= "first-image">
+   <label class= "para"> Snapshot -  </label>
+   <div id= "result"></div>
+   </div>
+</div>
+
+
+<br><br><br><br><br>
+<row>
+    <button class= "btn btn-warning btn" onclick="Take_snapshot()"> Take Snapshot </button>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class= "btn btn-danger btn" onclick= "Check()"> Identify Image </button>
+</row>
+  
+<br><br>
+
+<h4 class= "info"> Name : <span id= "family_person"></span></h4>
+<h4 class= "info"> Accuracy : <span id= "accu"></span></h4>
+</div>
+
+</center>
+    </body>
+    <script src= "function.js"></script>
+</html>
